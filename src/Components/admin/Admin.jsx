@@ -17,11 +17,11 @@ export default function Admin() {
   function handlesubmit(e){
     e.preventDefault();
 
-    const loggedUser = JSON.parse(localStorage.getItem("user"));
+    // const loggedUser = JSON.parse(localStorage.getItem("user"));
 
-    if(input.email ===loggedUser.email && input.password ===loggedUser.password){
+    if(input.email ==="admin" && input.password ==="1234"){
             
-      localStorage.setItem("loggedIn",true)
+      // localStorage.setItem("loggedIn",true)
       navigate("/admin")
     }else{
       // setCommonError("Invalid Credentials !!")
@@ -70,7 +70,7 @@ export default function Admin() {
 
                   <div className='d-flex'>
                      <Link><button onClick={handlesubmit} type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn mb-4">Sign in</button></Link>
-                     <p className='ms-4'>Not a member? <Link to={"/register"}>Register Here</Link></p>
+                     <p className='ms-4'>Not a member? <Link>Register Here</Link></p>
                   </div>
               </form>
               </div>
