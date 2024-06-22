@@ -51,7 +51,7 @@ export const cartSlice = createSlice({
 
     setTotalAmount:((state,action)=>{
       const amount = action.payload
-      state.totalAmount = amount
+      state.totalAmount = amount;
     })
  
   },

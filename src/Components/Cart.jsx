@@ -40,8 +40,9 @@ export default function Cart() {
 
 						{
 							data.map((product)=>{
+								allTotal += product.price*product.quantity
 								return(
-									
+							
 									<div class="product-cart d-flex">
 							<div class="one-forth">
 								<div class="product-img" style={{backgroundImage:`url(${product.image})` }}>

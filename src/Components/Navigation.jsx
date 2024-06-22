@@ -44,7 +44,7 @@ function Navigation(){
 								<li><Link to={'/all-products'}>All Products</Link></li>
 								<li><Link to={'/about'}>About</Link></li>
 								<li><Link to={'/contact'}>Contact</Link></li>
-								<li><Link to={'login'}>Admin</Link></li>
+								<li><Link to={'/login'}>Admin</Link></li>
 								<li class="cart">
                                     <Link to={'/cart'}><i class="fa-solid fa-cart-shopping"></i> Cart [{count.length}]</Link>
                                 </li>
