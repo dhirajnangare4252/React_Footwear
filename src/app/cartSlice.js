@@ -13,14 +13,14 @@ export const cartSlice = createSlice({
     addToCart: (state,action) => {
 
         let product = action.payload
-        let findProduct = state.products.find((item)=> item.id === product.id)
+        let findProduct = state.products.find((item)=> item.id === product.id)    
 
         if(findProduct){
             findProduct.quantity +=1
         }
         else{
 
-            state.products.push(action.payload)
+            state.products.push(action.payload) 
         }
     },
     removeFromCart:(state,action)=>{
