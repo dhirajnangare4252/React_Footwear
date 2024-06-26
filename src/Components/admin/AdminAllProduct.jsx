@@ -39,8 +39,6 @@ export default function AdminAllProduct() {
                         </div> 
                     </div>  
                 </div>
-               
-            
             </div>
         </div>
     </div>
