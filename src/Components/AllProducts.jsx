@@ -156,23 +156,24 @@ const[newData,setNewData]=useState([]);
 
 						{
 							newData.map((eachData,i)=>{
-								return(
-
-							<div class="col-lg-4 mb-4 text-center">
-								<div class="product-entry border">
-									<Link to={"/product-details/"+eachData.id} class="prod-img">
-										<img src={eachData.image} style={{width:"100%",height:"250px"}} class="img-fluid" alt="Free html5 bootstrap 4 template"/>
-									</Link>
-									<div class="desc">
-										<h2><a href="#">{eachData.title}</a></h2>
-										<span class="price">&#8377;{eachData.price} &nbsp; <del>&#8377;{eachData.mrp}</del></span>      
+									return(
+									
+									<div class="col-lg-4 mb-4 text-center">
+										<div class="product-entry border">
+											<Link to={"/product-details/"+eachData.id} class="prod-img">
+												<img src={eachData.image} style={{width:"100%",height:"250px"}} class="img-fluid" alt="Free html5 bootstrap 4 template"/>
+											</Link>
+											<div class="desc">
+												<h2><a href="#">{eachData.title}</a></h2>
+												<span class="price">&#8377;{eachData.price} &nbsp; <del>&#8377;{eachData.mrp}</del></span>      
+											</div>
+											<button onClick={()=>addProductToCart(eachData)} class="btn btn-primary">Add to Cart</button>
+										</div>
 									</div>
-									<button onClick={()=>addProductToCart(eachData)} class="btn btn-primary">Add to Cart</button>
-								</div>
-							</div>
-
-								)
+	                                
+										)
 							})
+							
 						}
 
 
